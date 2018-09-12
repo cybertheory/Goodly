@@ -14,7 +14,7 @@ var entry = entries[i];
  document.getElementsByClassName("blog-slider__title")[i].textContent=entry.title;
  document.getElementsByClassName("blog-slider__text")[i].textContent=entry.summary.substring(0,175) + "...";
  document.getElementsByClassName("blog-slider__button")[i].href=entry.link;
-//document.getElementsByClassName("img")[i].src=entry.image
+document.getElementsByClassName("img")[i].src=entry.image["url"];
 
 }
 }
