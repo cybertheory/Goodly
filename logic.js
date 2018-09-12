@@ -1,6 +1,5 @@
 $(document).ready(function() {
 var url = 'https://abcnews.go.com/abcnews/topstories';
-feednami.setPublicApiKey('96bacc26d5d4290ce16dfe16a95b8e282d9ae804a098cf5e049da5020980a8d2')
 feednami.load(url,function(result){
 if(result.error) {
 console.log(result.error);
