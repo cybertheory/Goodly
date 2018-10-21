@@ -9,7 +9,7 @@ console.log(result.error);
 var entries = result.feed.entries;
 for(var i = 0; i < 11; i++){
 var entry = entries[i];
- console.dir(getData("LHAl30weEymshy6DHYOdfdNEuXStp1eN6C4jsnmqfdyVrLvlr0",encodeUrl(entry.summary)));
+ console.dir(getData("LHAl30weEymshy6DHYOdfdNEuXStp1eN6C4jsnmqfdyVrLvlr0",'https://textapis.p.mashape.com/entities/?text='+encodeURI(entry.summary)));
  console.dir(entry);
  document.getElementsByClassName("blog-slider__code")[i].textContent=entry.date;
  document.getElementsByClassName("blog-slider__title")[i].textContent=entry.title;
